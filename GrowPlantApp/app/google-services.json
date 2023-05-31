@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049399466218",
+    "project_id": "capstonebangkit-f40fd",
+    "storage_bucket": "capstonebangkit-f40fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049399466218:android:f83a000513724e80359f93",
+        "android_client_info": {
+          "package_name": "com.example.capstonebangkit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0rRDIta5lGKP8MUcn7aySc2Ec-czbhZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
