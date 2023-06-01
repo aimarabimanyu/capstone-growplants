@@ -4,8 +4,13 @@ const dotenv = require("dotenv");
 const app = express();
 
 // ENDPOINT
+const authRoute = require("./routes/authRoute");
+const articleRouter = require("./routes/articleRoute");
 const userRoute = require("./routes/userRoute");
 
+
+// MIDDLEWARE
+const pageNotFound = require("./utils/pageNotFound");
 
 // CONFIGURE DOTENV
 dotenv.config();
@@ -23,7 +28,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ROUTER
+app.use(appendUrl("/auth"), authRoute);
+app.use(appendUrl("/articles"), articleRouter);
 app.use(appendUrl("/users"), userRoute);
+
 
 // ENDPOINT NOT CREATED
 app.use("/", pageNotFound);

@@ -1,6 +1,9 @@
 const Response = require("../model/Response");
 const User = require("../model/User");
+const UserImages = require("../model/UserImages");
 const httpStatus = require("http-status");
+const processFile = require("../middleware/uploadFile");
+const uploadImage = require('../utils/upload')
 
 const getUser = async (req, res) => {
   const user = req.currentUser;
@@ -20,17 +23,17 @@ const updateUser = async (req, res) => {
       return res.status(httpStatus.BAD_REQUEST).json(response);
     }
 
-    const ext = req.file.originalname.split('.').pop();
-    if (ext !== "png" && ext !== "jpg" && ext !== "jpeg" && ext !== "PNG" && ext !== "JPG" && ext !== "JPEG") {
-      const response = new Response.Error(400, "Only images are allowed" );
-      return res.status(httpStatus.BAD_REQUEST).json(response);
-    }
+    const result = await uploadImage(req.file, "user-img/");
 
     const upload = new UserImages({
         userId: userId,
         email: userEmail,
+        imageUrl: result.url,
     });
     const uploadSave = await upload.save();
+
+    // Update user profiles images
+    await User.findByIdAndUpdate(userId, { imageUrl: result.url } );
 
     // Return response
     const response = new Response.Success(false, null, uploadSave);
