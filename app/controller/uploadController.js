@@ -38,6 +38,20 @@ const getUploads = async (req, res) => {
   }
 };
 
+const getUpload = async (req, res) => {
+  let response = null;
+  try{
+    const image = await Upload.findOne({_id : req.params.id});
+
+    response = new Response.Success(false, null, image);
+    res.status(httpStatus.OK).json(response);
+  } catch (error) {
+    response = new Response.Error(true, error.message);
+    res.status(httpStatus.BAD_REQUEST).json(response);
+  }
+};
+
+
 const deleteUpload = async (req, res) => {
   let response = null;
   try {
@@ -68,4 +82,4 @@ const deleteUpload = async (req, res) => {
   }
 }
 
-module.exports = { postUpload, getUploads, deleteUpload };
+module.exports = { postUpload, getUploads, getUpload, deleteUpload };
