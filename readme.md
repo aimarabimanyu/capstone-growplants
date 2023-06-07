@@ -19,7 +19,7 @@
 Response : 
 ```json
 {
-    "error": boolean,
+    "error": "boolean",
     "message": "string"
 }
 ```
@@ -39,7 +39,7 @@ Response :
 Response : 
 ```json
 {
-    "error": boolean,
+    "error": "boolean",
     "message": null,
     "data": {
         "token": "string"
