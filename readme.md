@@ -61,15 +61,11 @@
 - Url: /api/v1/articles
 - Header: Bearer token
 - Body: form-data
-| KEY | VALUE |
-| --- | --- |
-| file | file image |
-| name | "string" |
-| description | "string" |
-| prescription | "string" |
-| prescription | ["string"] |
-| prevention | ["string"] |
-| category | "string" |
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 ```json
