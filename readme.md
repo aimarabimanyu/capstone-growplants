@@ -41,6 +41,25 @@
 | --------------- | --------------- | 
 | file | file image | 
 
+```json
+{
+  "error": "boolean",
+  "message": "string",
+  "data": {
+     "predicted_disease": "string",
+     "articles": [
+         {
+           "imageUrl": "string",
+           "name": "string",
+           "category": "string",
+           "description": "string",
+           "prescription": ["string"],
+           "prevention": ["string"],
+         }
+     ]
+  }
+```
+
 ## Profile
 
 ### Get Profile
