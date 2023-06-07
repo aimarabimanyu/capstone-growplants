@@ -26,7 +26,7 @@
 ```json
 {
   "email": "string",
-  "password": "string"
+  "password": "string",
 }
 ```
 
@@ -41,6 +41,7 @@
 | --------------- | --------------- | 
 | file | file image | 
 
+- Response :
 ```json
 {
   "error": "boolean",
@@ -54,7 +55,7 @@
            "category": "string",
            "description": "string",
            "prescription": ["string"],
-           "prevention": ["string"],
+           "prevention": ["string"]
          }
      ]
   }
