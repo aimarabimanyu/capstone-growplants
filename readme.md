@@ -44,6 +44,7 @@ Response :
     "data": {
         "token": "string"
     }
+}
 ```
 
 ## Predict
