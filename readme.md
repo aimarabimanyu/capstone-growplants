@@ -21,7 +21,7 @@
 
 - Method: POST
 - Url: /api/v1/auth/signin
-- - Body: JSON
+- Body: JSON
 
 ```json
 {
