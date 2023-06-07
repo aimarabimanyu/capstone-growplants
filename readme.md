@@ -68,7 +68,7 @@
 - Method: GET
 - Url: /api/v1/users/profile
 - Header: Bearer token
-
+- Response :
 ```json
 {
   "error": "boolean",
@@ -103,7 +103,7 @@
 | prevention  | ["string"] | 
 | category  | "string" | 
 
-
+- Response :
 ```json
 {
   "error": "boolean",
@@ -126,6 +126,7 @@
 - Method: GET
 - Url: /api/v1/articles
 - Header Authorization : Bearer token
+- Response :
 
 ```json
 {
