@@ -5,10 +5,9 @@
 
 ## Sign Up
 
-- Method: POST
-- Url: /api/v1/auth/signup
-- Body: JSON
-
+- Method : POST
+- Url : /api/v1/auth/signup
+- Body : JSON
 ```json
 {
   "name": "string",
@@ -17,17 +16,34 @@
 }
 ```
 
+Response : 
+```json
+{
+    "error": boolean,
+    "message": "string"
+}
+```
+
 ## Sign In
 
 - Method: POST
 - Url: /api/v1/auth/signin
 - Body: JSON
-
 ```json
 {
   "email": "string",
   "password": "string",
 }
+```
+
+Response : 
+```json
+{
+    "error": boolean,
+    "message": null,
+    "data": {
+        "token": "string"
+    }
 ```
 
 ## Predict
