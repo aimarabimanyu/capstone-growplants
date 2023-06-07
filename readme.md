@@ -6,6 +6,7 @@
 
 - Method: POST
 - Url: /api/v1/auth/signup
+- Body: JSON
 
 ```json
 {
@@ -19,6 +20,7 @@
 
 - Method: POST
 - Url: /api/v1/auth/signin
+- - Body: JSON
 
 ```json
 {
@@ -58,6 +60,17 @@
 - Method: POST
 - Url: /api/v1/articles
 - Header: Bearer token
+- Body: form-data
+| KEY | VALUE |
+| --- | --- |
+| file | file image |
+| name | "string" |
+| description | "string" |
+| prescription | "string" |
+| prescription | ["string"] |
+| prevention | ["string"] |
+| category | "string" |
+
 
 ```json
 {
@@ -80,7 +93,7 @@
 
 - Method: GET
 - Url: /api/v1/articles
-- Header: Bearer token
+- Header Authorization : Bearer token
 
 ```json
 {
