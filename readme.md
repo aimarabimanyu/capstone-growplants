@@ -5,9 +5,9 @@
 
 ## Sign Up
 
-- Method : POST
-- Url : /api/v1/auth/signup
-- Body : JSON
+- Method: POST
+- Url: /api/v1/auth/signup
+- Body: JSON
 ```json
 {
   "name": "string",
