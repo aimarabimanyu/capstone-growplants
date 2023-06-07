@@ -30,6 +30,17 @@
 }
 ```
 
+## Predict
+
+- Method: POST
+- Url: /api/v1/predict
+- Header: Bearer token
+- Body: `multipart/form-data`
+
+| KEY | VALUE | 
+| --------------- | --------------- | 
+| file | file image | 
+
 ## Profile
 
 ### Get Profile
