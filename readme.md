@@ -64,9 +64,12 @@
 
 | KEY | VALUE | 
 | --------------- | --------------- | 
-| Row 1 Column 1 | Row 1 Column 2 | 
-| Row 2 Column 1 | Row 2 Column 2 | 
-| Row 3 Column 1 | Row 3 Column 2 | 
+| file | file image | 
+| name | "string" | 
+| description  | "string" | 
+| prescription  | ["string"] | 
+| prevention  | ["string"] | 
+| category  | "string" | 
 
 
 ```json
