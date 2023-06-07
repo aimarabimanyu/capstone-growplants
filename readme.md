@@ -16,7 +16,7 @@
 }
 ```
 
-Response : 
+- Response : 
 ```json
 {
     "error": "boolean",
@@ -36,7 +36,7 @@ Response :
 }
 ```
 
-Response : 
+- Response : 
 ```json
 {
     "error": "boolean",
