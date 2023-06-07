@@ -50,3 +50,51 @@
   ]
 }
 ```
+
+## Articles
+
+### Post Upload Article
+
+- Method: POST
+- Url: /api/v1/articles
+- Header: Bearer token
+
+```json
+{
+  "error": "boolean",
+  "message": "string",
+  "data": [
+    {
+      "imageUrl": "string",
+      "name": "string",
+      "category": "string",
+      "description": "string",
+      "prescription": ["string"],
+      "prevention": ["string"],
+    }
+  ]
+}
+```
+
+### Get Articles
+
+- Method: GET
+- Url: /api/v1/articles
+- Header: Bearer token
+
+```json
+{
+  "error": "boolean",
+  "message": "string",
+  "data": [
+    {
+      "imageUrl": "string",
+      "name": "string",
+      "category": "string",
+      "description": "string",
+      "prescription": ["string"],
+      "prevention": ["string"],
+    }
+  ]
+}
+```
