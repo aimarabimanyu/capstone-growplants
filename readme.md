@@ -1,6 +1,7 @@
 # GrownPlants-API
 
 # Documentation
+- Base URL : https://grow-plants-ruca2dm4pa-et.a.run.app
 
 ## Sign Up
 
