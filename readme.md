@@ -72,7 +72,7 @@
 - Method: POST
 - Url: /api/v1/articles
 - Header: Bearer token
-- Body: form-data
+- Body: `multipart/form-data`
 
 | KEY | VALUE | 
 | --------------- | --------------- | 
