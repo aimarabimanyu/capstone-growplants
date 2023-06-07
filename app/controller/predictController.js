@@ -48,7 +48,6 @@ const predictController = async (req, res) => {
       })
 
       const upload = await uploadImage(req.file, "ml-img/")
-
       
       //POST History
       const history = new History({
@@ -67,12 +66,10 @@ const predictController = async (req, res) => {
       });
       res.status(httpStatus.OK).json(response);
     } catch (error) {
-        //console.log(error)
         response = new Response.Error(true, error.message);
         res.status(httpStatus.BAD_REQUEST).json(response);
     }
 }
-
 
 module.exports = {
    predictController
