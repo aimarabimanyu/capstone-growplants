@@ -1,11 +1,11 @@
 # GrownPlants-API
 
 # Documentation
-- Base URL : https://grow-plants-ruca2dm4pa-et.a.run.app
+- Base URL : `https://grow-plants-ruca2dm4pa-et.a.run.app`
 
 ## Sign Up
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/auth/signup
 - Body: JSON
 ```json
@@ -26,7 +26,7 @@
 
 ## Sign In
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/auth/signin
 - Body: JSON
 ```json
@@ -49,7 +49,7 @@
 
 ## Predict
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/predict
 - Header: Bearer token
 - Body: `multipart/form-data`
@@ -83,7 +83,7 @@
 
 ### Get Profile
 
-- Method: GET
+- Method: `GET`
 - Url: /api/v1/users/profile
 - Header: Bearer token
 - Response :
@@ -107,7 +107,7 @@
 
 ### Post Upload Article
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/articles
 - Header: Bearer token
 - Body: `multipart/form-data`
@@ -141,7 +141,7 @@
 
 ### Get Articles
 
-- Method: GET
+- Method: `GET`
 - Url: /api/v1/articles
 - Header Authorization : Bearer token
 - Response :
