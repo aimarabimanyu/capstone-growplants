@@ -1,14 +1,13 @@
 # GrownPlants-API
 
 # Documentation
-- Base URL : https://grow-plants-ruca2dm4pa-et.a.run.app
+- Base URL : `https://grow-plants-ruca2dm4pa-et.a.run.app`
 
 ## Sign Up
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/auth/signup
 - Body: JSON
-
 ```json
 {
   "name": "string",
@@ -17,16 +16,66 @@
 }
 ```
 
+- Response : 
+```json
+{
+    "error": "boolean",
+    "message": "string"
+}
+```
+
 ## Sign In
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/auth/signin
 - Body: JSON
-
 ```json
 {
   "email": "string",
-  "password": "string"
+  "password": "string",
+}
+```
+
+- Response : 
+```json
+{
+    "error": "boolean",
+    "message": null,
+    "data": {
+        "token": "string"
+    }
+}
+```
+
+## Predict
+
+- Method: `POST`
+- Url: /api/v1/predict
+- Header: Bearer token
+- Body: `multipart/form-data`
+
+| KEY | VALUE | 
+| --------------- | --------------- | 
+| file | file image | 
+
+- Response :
+```json
+{
+  "error": "boolean",
+  "message": "string",
+  "data": {
+     "predicted_disease": "string",
+     "articles": [
+         {
+           "imageUrl": "string",
+           "name": "string",
+           "category": "string",
+           "description": "string",
+           "prescription": ["string"],
+           "prevention": ["string"]
+         }
+     ]
+  }
 }
 ```
 
@@ -34,10 +83,10 @@
 
 ### Get Profile
 
-- Method: GET
+- Method: `GET`
 - Url: /api/v1/users/profile
 - Header: Bearer token
-
+- Response :
 ```json
 {
   "error": "boolean",
@@ -58,10 +107,10 @@
 
 ### Post Upload Article
 
-- Method: POST
+- Method: `POST`
 - Url: /api/v1/articles
 - Header: Bearer token
-- Body: form-data
+- Body: `multipart/form-data`
 
 | KEY | VALUE | 
 | --------------- | --------------- | 
@@ -72,7 +121,7 @@
 | prevention  | ["string"] | 
 | category  | "string" | 
 
-
+- Response :
 ```json
 {
   "error": "boolean",
@@ -92,9 +141,10 @@
 
 ### Get Articles
 
-- Method: GET
+- Method: `GET`
 - Url: /api/v1/articles
 - Header Authorization : Bearer token
+- Response :
 
 ```json
 {
