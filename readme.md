@@ -103,6 +103,31 @@
 }
 ```
 
+## History
+
+### Get History
+
+- Method: `GET`
+- Url: /api/v1/users/history
+- Header: Bearer token
+- Response :
+```json
+{
+  "error": "boolean",
+  "message": "string",
+  "data": [
+    {
+      "userId": "string",
+      "email": "string",
+      "imageUrl": "string",
+       "articleIds": ["string"],
+            "predictRate": "string",
+            "createdAt": "string",
+    }
+  ]
+}
+```
+
 ## Articles
 
 ### Post Upload Article
