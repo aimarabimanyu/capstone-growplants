@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lParentContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/container_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"/>
+
+
+    <me.ibrahimsn.lib.NiceBottomBar
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomBar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:indicatorGravity="top"
+        app:indicatorWidth="15dp"
+        android:elevation="@dimen/margin10"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu_navigation"
+        app:indicatorColor="@color/white"
+        app:textColorActive="@color/colorPrimary"
+        app:textColor="@color/lightGray"
+        app:indicatorInterpolator="anticipateOvershoot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
