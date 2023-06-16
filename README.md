@@ -2,7 +2,8 @@
 Predict plant diseases (rice, corn, and potato) through leaf images with 13 classes.
 
 # Documentation
-1. Datasets : Approximately 9100 Datasets in total <br />
+1. Datasets : We use approximately 9100 Datasets in total <br />
+   Source: <br />
    https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset (corn and potato datasets) <br />
    https://www.kaggle.com/datasets/muhammadardiputra/potato-leaf-disease-dataset (potato datasets) <br />
    https://archive.ics.uci.edu/ml/datasets/rice+leaf+diseases (rice datasets) <br />
