@@ -1,5 +1,5 @@
 # Capstone-GrowPlants-Machine Learning Part
-Predict plant diseases (rice, corn, and potato) through leaf images with 13 classes
+Predict plant diseases (rice, corn, and potato) through leaf images with 13 classes.
 
 # Documentation
 1. Datasets : Approximately 9100 Datasets in total <br />
