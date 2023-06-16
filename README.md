@@ -15,7 +15,7 @@ Predict plant diseases (rice, corn, and potato) through leaf images with 13 clas
 6. Compile and train the model
 7. Test model using test dataset
 8. Evaluate model using accuracy value, loss function, confusion matrix, and classification report
-9. Save model and convert using tensorflow js
+9. Save model to h5 format and then convert it using tensorflow js
 
 # Class Prediction
 There are 13 classes to be predicted by the model:
