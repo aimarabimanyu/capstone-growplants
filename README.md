@@ -15,3 +15,19 @@ Predict plant diseases (rice, corn, and potato) through leaf images with 13 clas
 7. Test model using test dataset
 8. Evaluate model using accuracy value, loss function, confusion matrix, and classification report
 9. Save model and convert using tensorflow js
+
+# Class Prediction
+There are 13 classes to be predicted by the model:
+1. Padi sehat
+2. Padi hispa
+3. Padi hawar daun
+4. Padi blast
+5. Padi bercak cokelat
+6. Kentang virus
+7. Kentang sehat
+8. Kentang busuk daun
+9. Kentang bercak kering
+10. Jagung sehat
+11. Jagung karat daun
+12. Jagung hawar daun
+13. Jagung bercak daun
