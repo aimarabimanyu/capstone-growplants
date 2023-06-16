@@ -9,7 +9,7 @@
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/aimarabimanyu/capstone-growplants/assets/94217552/f7981ef8-1878-4088-a546-7158f0b2ab98"><br>
+  https://github.com/aimarabimanyu/capstone-growplants/assets/94217552/72ce1998-b82e-4908-9ffc-f6126d8ad3cd
 </p>
 GrowPlants is an android-based application that is useful for detecting diseases in rice, corn and potato plants through leaf images. GrowPlants will help farmers maximize their crop productivity.
 
